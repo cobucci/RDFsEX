@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	LICENSE
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.rdfhdt</groupId>
+  <artifactId>hdt-java-parent</artifactId>
+  <packaging>pom</packaging>
+  <name>RDF/HDT</name>
+  <version>2.0</version>
+  <description>HDT (Header, Dictionary, Triples) is a compact data structure and binary serialization format for RDF that keeps big datasets compressed to save space while maintaining search and browse operations without prior decompression. This makes it an ideal format for storing and sharing RDF datasets on the Web.</description>
+  <url>http://www.rdfhdt.org/</url>
+
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
+  <organization>
+    <name>INSIGHT Centre for Data Analytics</name>
+    <url>http://www.insight-centre.org</url>
+  </organization>
+  
+  <!-- Maven does not allow multiple organizations? :( 
+  <organization>
+    <name>DataWeb Research</name>
+    <url>http://dataweb.infor.uva.es</url>
+  </organization> -->
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <scm>
+    <connection>scm:git:https://code.google.com/p/hdt-java/ </connection>
+    <developerConnection>scm:git:https://code.google.com/p/hdt-java/</developerConnection>
+    <url>http://code.google.com/p/hdt-java/source/browse</url>
+  </scm>
+
+<developers>
+    <developer>
+      <id>mario.arias</id>
+      <name>Mario Arias</name>
+      <email>mario.arias@gmail.com</email>
+      <organization>INSIGHT Centre for Data Analytics</organization>
+      <organizationUrl>http://www.insight-centre.org</organizationUrl>
+    </developer>
+    <developer>
+      <id>jfergar83</id>
+      <name>Javier D. Fernández</name>
+      <email>jfergar83@infor.uva.es</email>
+      <organization>DataWeb Research. University of Valladolid.</organization>
+      <organizationUrl>http://dataweb.infor.uva.es</organizationUrl>
+    </developer>
+    <developer>
+      <id>migumar2</id>
+      <name>Miguel A. Martínez Prieto</name>
+      <email>migumar2@infor.uva.es</email>
+      <organization>DataWeb Research. University of Valladolid.</organization>
+      <organizationUrl>http://dataweb.infor.uva.es</organizationUrl>
+    </developer>
+  </developers>
+
+  <profiles>
+    <profile>
+      <id>complete</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <modules>
+        <module>hdt-api</module>
+        <module>hdt-java-core</module>
+        <module>hdt-java-cli</module>
+        <module>hdt-jena</module>
+        <module>hdt-java-package</module>
+        <module>hdt-fuseki</module>
+      </modules>
+    </profile>
+  </profiles>
+
+  <issueManagement>
+    <system>Google Code</system>
+    <url>https://code.google.com/p/hdt-java/issues/list</url>
+  </issueManagement>
+
+</project>

@@ -1,0 +1,12 @@
+HDT Library, Java Implementation. http://www.rdfhdt.org
+
+Overview
+=================
+
+HDT-lib is a Java Library that implements the W3C Submission (http://www.w3.org/Submission/2011/03/) of the RDF HDT (Header-Dictionary-Triples) binary format for publishing and exchanging RDF data at large scale. Its compact representation allows storing RDF in fewer space, providing at the same time direct access to the stored information. This is achieved by depicting the RDF graph in terms of three main components: Header, Dictionary and Triples. The Header includes extensible metadata required to describe the RDF data set and details of its internals. The Dictionary organizes the vocabulary of strings present in the RDF graph by assigning numerical IDs to each different string. The Triples component comprises the internal structure of the RDF graph in a compressed form.
+
+Compiling
+=================
+
+Just run "mvn compile" and let Maven do the magic.
+
